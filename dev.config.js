@@ -6,7 +6,7 @@ module.exports = {
   devtool: 'source-map',
   entry: './src/main.js',
   output: {
-    path: './build',
+    path: __dirname + '/dist',
     filename: 'dev.bundle.js'
   },
   resolve: {
@@ -16,6 +16,9 @@ module.exports = {
     new HtmlWebpackPlugin()
   ],
   module: {
-    loaders: []
+    loaders: [
+      { test: /\.js$/, loader: 'jsx-loader?harmony' },
+      { test: /\.json$/, loader: 'json-loader'}
+    ]
   }
 };

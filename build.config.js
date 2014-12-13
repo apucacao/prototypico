@@ -5,7 +5,7 @@ var UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 
 module.exports = r.mixin(devConfig, {
   output: {
-    path: './dist',
+    path: __dirname + '/dist',
     filename: '[hash].bundle.js'
   },
   plugins: [

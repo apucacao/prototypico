@@ -6,11 +6,13 @@
   "license": "MIT",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --config dev.config.js --colors --port 9000",
-    "dist": "node_modules/.bin/webpack --config dist.config.js --colors"
+    "build": "node_modules/.bin/webpack --config build.config.js --colors"
   },
   "dependencies": {
     "html-webpack-plugin": "^1.1.0",
     "ramda": "^0.8.0",
+    "react": "^0.12.1",
+    "react-router": "^0.11.4",
     "webpack": "^1.4.13",
     "webpack-dev-server": "^1.6.6"
   }
