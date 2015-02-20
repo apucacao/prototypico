@@ -18,7 +18,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loader: 'jsx-loader?harmony' },
-      { test: /\.json$/, loader: 'json-loader'}
+      { test: /\.json$/, loader: 'json-loader'},
+      { test: /\.less$/, loader: "style-loader!css-loader!less-loader" }
     ]
   }
 };
