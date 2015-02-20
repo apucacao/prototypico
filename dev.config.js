@@ -17,7 +17,7 @@ module.exports = {
   ],
   module: {
     loaders: [
-      { test: /\.js$/, loader: 'jsx-loader?harmony' },
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
       { test: /\.json$/, loader: 'json-loader'},
       { test: /\.less$/, loader: "style-loader!css-loader!less-loader" }
     ]
