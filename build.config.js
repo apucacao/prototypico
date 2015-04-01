@@ -9,7 +9,7 @@ module.exports = r.mixin(devConfig, {
     filename: '[hash].bundle.js'
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({ template: 'templates/index.html' }),
     new UglifyJsPlugin()
   ]
 });

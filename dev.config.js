@@ -13,7 +13,7 @@ module.exports = {
     modulesDirectories: ['node_modules'],
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({ template: 'templates/index.html' })
   ],
   module: {
     loaders: [
